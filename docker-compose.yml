@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  proxy-service:
+    build: .
+    container_name: proxy_interno_resiliente
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./proxy_service:/app/proxy_service
+    environment:
+      # Variáveis de ambiente para configuração futura
+      - QUEUE_MAX_SIZE=100
+      - CACHE_TTL_SECONDS=60
+      - CIRCUIT_BREAKER_FAILURE_THRESHOLD=3
