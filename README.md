@@ -1,4 +1,5 @@
 # Desafio-Proxy-TDSOFT
+# Aluno: Victor Elias Costa Menezes
 # Proxy Interno Resiliente
 
 Este projeto é a implementação de um serviço de proxy interno resiliente, desenvolvido como solução para o desafio "Proxy Interno". O objetivo principal é gerenciar o fluxo de requisições de múltiplos clientes internos para uma API externa que impõe um limite de taxa (rate limit) de 1 requisição por segundo.
